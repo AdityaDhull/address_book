@@ -1,0 +1,9 @@
+<!DOCTYPE html>
+<h1><%= @contact.name %></h1>
+
+<p><strong>Address:</strong> <%= @contact.address %></p>
+<p><strong>Email:</strong> <%= @contact.email %></p>
+<p><strong>Phone:</strong> <%= @contact.phone %></p>
+
+<%= link_to "Edit", edit_contact_path(@contact) %> |
+<%= link_to "Back to Contacts", contacts_path %>
